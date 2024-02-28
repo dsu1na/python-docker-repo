@@ -3,6 +3,7 @@ RUN apt update
 RUN apt install -y git
 WORKDIR /python_projects
 COPY requirements.txt . 
+ENV PYTHONPATH="$PYTHONPATH:/python_projects"
 RUN pip install --no-cache-dir -r requirements.txt
 RUN git clone https://github.com/dsu1na/unittesting.git
 

@@ -1,2 +1,2 @@
-image_name='pyhton-docker-image'
+image_name='python-docker-image'
 docker build --tag $image_name .
